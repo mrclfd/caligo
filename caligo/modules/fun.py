@@ -12,7 +12,7 @@ class Profiles(module.Module):
     @command.usage(
         ".menyala"
     )
-    @command.alias("ma, padi")
+    @command.alias("ma", "padi")
     async def cmd_menyala(self, ctx: command.Context):  
         await ctx.respond("tipis tipis cakk 🔥🔥")
         await asyncio.sleep(1.1)
@@ -62,7 +62,9 @@ class Profiles(module.Module):
         await asyncio.sleep(1.1)
         await ctx.respond("jangan kasi longgar king 🔝💯🔥🙌🏼")
         await asyncio.sleep(1.1)
-        await ctx.respond("eitsss pondasi bangsa abangkuuhh 🔥🔝🙌🏼tipis tipis 🔥🔛🔝")
+        await ctx.respond("eitsss pondasi bangsa abangkuuhh 🔥🔝🙌🏼")
+        await asyncio.sleep(1.1)
+        await ctx.respond("tipis tipis 🔥🔛🔝")
         await asyncio.sleep(1.1)
         await ctx.respond("sesekali 🙌🏼")
         await asyncio.sleep(1.1)
@@ -81,6 +83,7 @@ class Profiles(module.Module):
         await ctx.respond("capt idolaa 🔥🙌🏼🔝")
         await asyncio.sleep(1.1)
         await ctx.respond("wanita mana yang berani menyakitimu king 💯💯💪❤️‍🔥")
+        await asyncio.sleep(1.1)
 
         return f"Menyala abangku🔥🙌"
 
