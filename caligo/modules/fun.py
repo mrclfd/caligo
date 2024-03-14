@@ -1,18 +1,22 @@
-import asyncio
-# import re
-from typing import Any, ClassVar, Literal, Optional, Set, Tuple
 
-from pyrogram.types import Message
+from typing import ClassVar, Optional
 
-from caligo import command, module, util
+from caligo import command, module
+
+
+class Profiles(module.Module):
+    name: ClassVar[str] = "Funny"
 
     @command.desc("Kocok")
-    async def cmd_kocok(self, ctx: command.Context):
-        
-        await ctx.msg.edit("1")
-        await ctx.msg.edit("2")
-        await ctx.msg.edit("3")
+    @command.usage(
+        ".kocok"
+    )
+    @command.alias("kc")
+    async def cmd_kocok(self, ctx: command.Context)       
+        await ctx.respond("1")
+        await ctx.respond("2")
+        await ctx.respond("3")
+        await ctx.respond("4")
 
-        return f"Terkocok!"
+        return f"Terkocok!!"
 
-        await ctx.msg.delete()
