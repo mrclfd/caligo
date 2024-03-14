@@ -12,7 +12,7 @@ class Profiles(module.Module):
         ".kocok"
     )
     @command.alias("kc")
-    async def cmd_kocok(self, ctx: command.Context)       
+    async def cmd_kocok(self, ctx: command.Context):  
         await ctx.respond("1")
         await ctx.respond("2")
         await ctx.respond("3")
